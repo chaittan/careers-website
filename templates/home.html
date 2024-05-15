@@ -10,19 +10,24 @@
         width: 100%;
         height: 360px;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <image
+      class="image-fluid" id="banner" src="https://baee98c6-31d9-4e96-9a2b-21e0a3adc941-00-1iufywr9l58sl.worf.replit.dev/static/banner.jpg"
+
+    ></image>
     <div class="container">
     <h1 class="text-center mt-2 mb-4">Jovian Career</h1>
 
-      <image
-        class="image-fluid" id="banner" src="https://baee98c6-31d9-4e96-9a2b-21e0a3adc941-00-1iufywr9l58sl.worf.replit.dev/static/banner.jpg"
-
-      ></image>
+      
 
     <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+    <div class="row" style="margin-bottom:16px">
+    <div class="col-md-6">
     <p >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet
       purus quis sem venenatis, vitae ullamcorper nulla tincidunt. In bibendum,
@@ -37,6 +42,11 @@
       purus. Etiam feugiat consectetur urna eu pulvinar. Nulla rutrum odio et
       mauris tempor laoreet.
     </p>
+    </div>
+    <div class="d-none d-md-block col-md-6"> 
+    <img src="/static/people.jpg" style="height:360px; border-radius:4px;"> 
+    </div>
+    </div>
 
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <p >
@@ -48,5 +58,6 @@
     <button class="btn btn-primary btn-lg ">Contact Us</button>
     </div>
     </div>
+  {% include 'footer.html' %}
   </body>
 </html>
